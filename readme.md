@@ -26,3 +26,11 @@ What's new?
        **Gender gender;**
     
        **gender = Gender.undefine;**
+
+___
+###Checking: 
+
+1. Fixed bugs 06.11.2021
+   1. Correct the value of enum "undefine". **Done "undefined".**
+   2. Correct the name of the method of the class Cat "WhoIsCat". **Done "whoIsCat".**
+   3. Correct the name of the method of the class Cat "childbirth". **Done "birthOfKitty".**

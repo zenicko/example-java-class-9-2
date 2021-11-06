@@ -1,6 +1,6 @@
 package ru.zenicko;
 
-enum Gender {male, female, undefine};
+enum Gender {male, female, undefined};
 
 public class Cat {
     static private int numberCats = 0;
@@ -16,7 +16,7 @@ public class Cat {
         age = 0;
         name = null;
         color = null;
-        gender = Gender.undefine;
+        gender = Gender.undefined;
         description = null;
         voice = null;
         numberCats++;
@@ -85,7 +85,7 @@ public class Cat {
         return description;
     }
 
-    public Cat childbirth(Cat maleCat) {
+    public Cat birthOfKitty(Cat maleCat) {
         System.out.println("I'm a kitty");
         return new Cat(0,
                 maleCat.getName() + "-" + this.name,
@@ -95,7 +95,7 @@ public class Cat {
                 "\n\tMale:" + getDescription() + "\n\tFemale:" + this.description);
     }
 
-    public void WhoIsCat() {
+    public void whoIsCat() {
         {
             System.out.println("I'm the Cat!");
             System.out.println("Name: " + name);
