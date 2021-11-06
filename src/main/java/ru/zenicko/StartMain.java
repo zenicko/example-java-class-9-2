@@ -16,8 +16,8 @@ public class StartMain {
         Kot.setGenderCat(Gender.male);
         Kot.setDescription("Himalayan cat");
         System.out.println("How many cats are at home? " + Cat.getNumberCats());
-        Kitty = murka.birthOfKitty(Kot);
-        Kitty.whoIsCat();
+        Kitty = murka.createChildCat(Kot);
+        Kitty.printInfoAboutCat();
         System.out.println("How many cats are at home? " + Cat.getNumberCats() + "\n\n??!!WTF!!??\n\n");
     }
 }

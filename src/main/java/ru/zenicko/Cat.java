@@ -85,17 +85,27 @@ public class Cat {
         return description;
     }
 
-    public Cat birthOfKitty(Cat maleCat) {
+    public Cat createChildCat(Cat cat) {
+        if (this.gender == cat.gender) {
+            System.out.println("It's impossible to ");
+            return null;
+        }
+        String maleDescription, femaleDescription;
+
+        if (this.gender == Gender.male) {
+            maleDescription = "\n\tMale:" + this.description;
+            femaleDescription = "\n\tFemale:" + cat.getDescription();
+        } else {
+            femaleDescription = "\n\tMale:" + this.description;
+            maleDescription = "\n\tFemale:" + cat.getDescription();
+        }
         System.out.println("I'm a kitty");
-        return new Cat(0,
-                maleCat.getName() + "-" + this.name,
-                this.color + maleCat.getColor(),
-                Gender.female,
-                this.voice + maleCat.getVoice(),
-                "\n\tMale:" + getDescription() + "\n\tFemale:" + this.description);
+        return new Cat(0, cat.getName() + "-" + this.name, this.color + cat.getColor(),
+                cat.getGender(), this.voice + cat.getVoice(),
+                maleDescription + femaleDescription);
     }
 
-    public void whoIsCat() {
+    public void printInfoAboutCat() {
         {
             System.out.println("I'm the Cat!");
             System.out.println("Name: " + name);

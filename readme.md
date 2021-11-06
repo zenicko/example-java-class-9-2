@@ -26,6 +26,25 @@ What's new?
        **Gender gender;**
     
        **gender = Gender.undefine;**
+###2. Gradle
+   1. Localisation language
+
+       ***test {***
+
+       ***system.Property "chromeoptions.pref","intl.accept_languages=ru"***
+
+       ***}***
+
+   2. Encoding
+
+      ***compileTestJava {***
+
+      ***options.encoding = 'UTF-8'***
+
+      ***}***
+###3. Resources
+   1. Google Java Style Guide https://google.github.io/styleguide/javaguide.html
+
 
 ___
 ###Checking: 
@@ -34,3 +53,9 @@ ___
    1. Correct the value of enum "undefine". **Done "undefined".**
    2. Correct the name of the method of the class Cat "WhoIsCat". **Done "whoIsCat".**
    3. Correct the name of the method of the class Cat "childbirth". **Done "birthOfKitty".**
+2. Fixed wrong code style
+    1. Method names are typically verbs or verb phrases. For example, sendMessage or stop. [*5.2.3 Method names*](https://google.github.io/styleguide/javaguide.html#s5.2.3-method-names)
+   
+       1. **whoIsCat -> printInfoAboutCat**
+       
+       2. **birthOfKitty -> createChildCat**
