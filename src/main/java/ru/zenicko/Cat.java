@@ -96,8 +96,8 @@ public class Cat {
             maleDescription = "\n\tMale:" + this.description;
             femaleDescription = "\n\tFemale:" + cat.getDescription();
         } else {
-            femaleDescription = "\n\tMale:" + this.description;
-            maleDescription = "\n\tFemale:" + cat.getDescription();
+            femaleDescription = "\n\tFemale:" + this.description;
+            maleDescription = "\n\tMale:" + cat.getDescription();
         }
         System.out.println("I'm a kitty");
         return new Cat(0, cat.getName() + "-" + this.name, this.color + cat.getColor(),

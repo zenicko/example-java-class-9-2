@@ -59,3 +59,5 @@ ___
        1. **whoIsCat -> printInfoAboutCat**
        
        2. **birthOfKitty -> createChildCat**
+       
+3. Fixed bugs in the method createChildCat
