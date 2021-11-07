@@ -27,7 +27,7 @@ What's new?
     
        **gender = Gender.undefine;**
 ###2. Gradle
-   1. Localisation language
+   1. Language localisation
 
        ***test {***
 
@@ -43,7 +43,7 @@ What's new?
 
       ***}***
 ###3. Resources
-   1. Google Java Style Guide https://google.github.io/styleguide/javaguide.html
+   1. [Google Java Style Guide](https://google.github.io/styleguide/javaguide.html "Google Java Style Guide")
 
 
 ___
